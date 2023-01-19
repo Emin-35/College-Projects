@@ -1,0 +1,20 @@
+/*summary css*/
+
+.weekly-summary {
+    background: #ff9c3f;
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    margin-left: 100px;
+    
+  }
+  
+  .summary-header {
+    color: #374151;
+    font-size: 38px;
+    padding: 10px;
+  }
+
+  .logo{
+    margin-left: 100px;
+  }

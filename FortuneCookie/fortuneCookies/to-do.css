@@ -1,0 +1,233 @@
+/* to do css*/
+html{
+}
+#new-task-form {
+    display: flex;
+  }
+  input,
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  #new-task-input::placeholder {
+    color: #6b7280;
+  }
+  
+  #new-task-input {
+    flex: 1 1 0%;
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #eee;
+    font-size: 1.25rem;
+  }
+  
+  #new-task-submit {
+    color: #ec4899;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  #new-task-submit:hover {
+    opacity: 0.8;
+  }
+  
+  #new-task-submit:active {
+    opacity: 0.7;
+  }
+  :root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --grey: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    /*
+      --RoseQuartz: #F6CDC4;
+      --Tangerine: #FC841F;
+      --lilac: #4B97BF;
+      --purple2: #5D1966;
+      */
+  }
+  
+  .to-do-body * {
+    box-sizing: border-box;
+    margin: 0;
+    /*Yazı fontu*/
+    
+  }
+  
+  .to-do-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(245, 245, 220);
+    color: #fff;
+  }
+  
+  /*Texti sayfanın ortasına alıyorum*/
+  .to-do-body header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /*Task List 2022 yazı ayarları*/
+  .to-do-body header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  /*Add text butonunu What do you have planned? kutusuna yaklaştırma*/
+  .to-do-body #new-task-form {
+    display: flex;
+  }
+  
+  /*To-do sayfasındaki bütün input ve butonların ayarları*/
+  /*Hepsi şu anda none durumunda çünki editlerken işimizi kolaylaştıracak*/
+  .to-do-body input,
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /*placeholder="What do you have planned?" yazısının rengini grey yaptım*/
+  .to-do-body #new-task-input::placeholder {
+    color: var(--grey);
+  }
+  
+  .to-do-body #new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+  }
+  
+  /*Add Text yazısının rengini ve şeklini ayarladım rengi pembe    background-image: linear-gradient(to right, var(--pink), var(--purple)); Bu ayar Add Text yazısının arka planını değiştiriyor ve pembe ile mor iç içe karışmış halde ortaya çıkarıyor ancak sayfa arka planı gri renk olduğu için 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; bu ayarlar ile Add Text arka planını transparent yapabiliyoruz ve sadece yazı kısmı renkli kalıyor */
+  .to-do-body #new-task-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(181, 213, 197), rgb(176, 139, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  /*Add Text butonun basınca renginin opaklık ayarları */
+  .to-do-body #new-task-submit:hover {
+    opacity: 0.8;
+  }
+  .to-do-body #new-task-submit:active {
+    opacity: 0.7;
+  }
+  
+  /*Tasks kısmının ayarları */
+  .to-do-body main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /*Tasks kısmının biraz sayfanın ortasına çektim */
+  .to-do-body main .task-list {
+    padding: 1rem;
+  }
+  /*<main>
+      <section class="task-list">
+          <h2>Tasks</h2> 
+          Kısaca Tasks yazısını editliyorum */
+  .to-do-body main .task-list h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #111827;
+    margin-bottom: 1rem;
+
+  }
+  
+  /*<main>
+      <section class="task-list">
+          <h2>Tasks</h2>
+              <div id = "tasks">
+                  <div class="task"> kısmını editliyorum */
+  .to-do-body main #tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /*<main>
+      <section class="task-list">
+          <h2>Tasks</h2>
+              <div id = "tasks">
+                  <div class="task"> 
+                      <div class="content"> kısmını editliyorum */
+  .to-do-body main #tasks .task .content .text {
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+  }
+  
+  .to-do-body main #tasks .task .content .text:not(:read-only) {
+    color: var(--pink);
+  }
+  
+  .to-do-body main #tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+  }
+  
+  /* Edit ve Delete buton ayarları */
+  .to-do-body main .task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+  
+  .to-do-body main .task .actions button:hover {
+    opacity: 0.8;
+  }
+  .to-do-body main .task .actions button:active {
+    opacity: 0.7;
+  }
+  
+  .to-do-body main .task .actions .edit {
+    background-image: linear-gradient(to right, rgb(181, 213, 197), rgb(176, 139, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .to-do-body main .task .actions .delete {
+    color: crimson;
+  }
+  

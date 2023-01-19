@@ -1,0 +1,39 @@
+/*header css*/
+html {
+  
+}
+.site-name {
+  flex-grow: 1;
+  color: #12471d;
+}
+body{
+  background-color: rgb(245, 245, 220);
+}
+
+.btn-menu {
+  margin-right: 10px;
+}
+.background {
+  background-color: rgb(245, 245, 220);
+}
+.main-header {
+  background: linear-gradient(to right, rgb(181, 213, 197), rgb(176, 139, 187));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+}
+
+.login-container {
+  padding: 5px;
+  background: #55715b;
+  border-radius: 0.4em;
+  right: 0px;
+  position: relative;
+  visibility:hidden ;
+}
+
+
+

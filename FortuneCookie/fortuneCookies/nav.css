@@ -1,0 +1,46 @@
+/* nav css */
+
+.main-nav {
+    position: relative;
+    display: flex;
+  }
+  
+  .nav-btn {
+    height: 250px;
+    width: 90%;
+    color: rgb(245, 245, 220);
+    text-align: center;
+    border-radius: 50px;
+    font-size: xx-large;
+    vertical-align: middle;
+    font-weight: bold;
+    padding-top: 20%;
+    margin: 0.3em;
+    border: none;
+  }
+  
+  .btn-to-do {
+    background-color: rgb(181, 213, 197);
+  }
+  
+  .btn-cookie {
+    background-color: rgb(236, 168, 105);
+  }
+  
+  .btn-remind {
+    background-color: rgb(176, 139, 187);
+  }
+  
+  .btn-schedule {
+    background-color: rgb(181, 213, 197);
+    font-size: x-large;
+  }
+  .countdown {
+    display: none;
+  }
+  .nav-btn a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .main-nav-div{
+    margin-top: 60px;
+  }

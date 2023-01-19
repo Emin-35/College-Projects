@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fortune Cookie | Timer</title>
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+     crossorigin="anonymous"
+   />
+   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="timer-styles.css" />
+</head>
+<body>
+   <header class="main-header">
+       <div class="dropdown">
+         <button
+           class="btn-menu btn btn-secondary dropdown-toggle"
+           type="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false"
+         >
+           menu
+         </button>
+         <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="home.html">Home</a></li>
+           <li><a class="dropdown-item" href="#">Settings</a></li>
+           <li><a class="dropdown-item" href="#">Terms&Conditions</a></li>
+           <li><a class="dropdown-item" href="#">About Us</a></li>
+         </ul>
+       </div>
+       <!-- <button class="btn btn-menu">Menu</button> -->
+       <h1 class="site-name">Fortune Cookie</h1>
+       <div class="login-container">
+         <button class="btn btn-login">Register</button>
+         <button class="btn btn-login">Login</button>
+       </div>
+       
+     </header>
+     <main class="app">
+        <progress id="js-progress" value="0"></progress>
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <div class="button-group mode-buttons" id="js-mode-buttons">
+            <button
+              data-mode="pomodoro"
+              class="button active mode-button"
+              id="js-pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              data-mode="shortBreak"
+              class="button mode-button"
+              id="js-short-break"
+            >
+              Short break
+            </button>
+            <button
+              data-mode="longBreak"
+              class="button mode-button"
+              id="js-long-break"
+            >
+              Long break
+            </button>
+          </div>
+          <div class="clock" id="js-clock">
+            <span id="js-minutes">25</span>
+            <span class="separator">:</span>
+            <span id="js-seconds">00</span>
+          </div>
+          <button class="main-button" data-action="start" id="js-btn">
+            Start
+          </button>
+        </div>
+      </main>
+      <div class="hidden">
+        <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+        <audio src="break.mp3" data-sound="shortBreak"></audio>
+        <audio src="break.mp3" data-sound="longBreak"></audio>
+      </div>
+      <script src="timer.js"></script>
+     
+   
+</body>
+<script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+       crossorigin="anonymous"
+     ></script>
+</html>
